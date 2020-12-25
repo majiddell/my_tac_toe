@@ -43,7 +43,8 @@ const Game = () => {
 
   return (
     <>
-      <Typography variant="h4" align="center" color="'textPrimary'">my Tac Toe</Typography>
+    <div className="container">
+      <Typography variant="h4" align="center" color="textPrimary">my Tac Toe</Typography>
       <Board squares={history[stepNumber]} onClick={handleClick} />
       <div className="info-wrapper">
         <div>
@@ -51,6 +52,7 @@ const Game = () => {
           {renderMoves()}
         </div>
         <h3>{winner ? "Winner: " + winner : "Next Player: " + xO}</h3>
+      </div>
       </div>
     </>
   );

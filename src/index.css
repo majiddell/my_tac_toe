@@ -13,7 +13,7 @@ body {
   display: flex;
   /* align-items: center; */
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 2rem;
 }
 
@@ -81,3 +81,46 @@ li {
 .MuiButton-text{
   font-size: 50px;
 }
+
+
+
+@media screen and (max-width: 600px) and (min-width: 350px) {
+ 
+.board {
+  border: 1rem solid #ffa861;
+  background: #b7dcff;
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+  font-size: 50px;
+}
+}
+
+
+@media screen and (max-width: 350px) and (min-width: 200px) {
+ 
+  .board {
+    border: 1rem solid #ffa861;
+    background: #b7dcff;
+    width: 250px;
+    height: 250px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 0.7rem;
+    font-size: 50px;
+  }
+
+  
+.squares {
+  background: #56a2ff;
+  border: none;
+  font-size: 20 px;
+  /* font-weight: 800; */
+  cursor: pointer;
+  outline: none;
+  width: 70px;
+}
+  }
+
